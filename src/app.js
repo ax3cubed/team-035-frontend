@@ -1,3 +1,3 @@
-const app = async () => '#BuildforSDG';
+const app = () => '#BuildforSDG';
 
 export default app;

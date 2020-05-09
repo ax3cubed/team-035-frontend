@@ -104,3 +104,4 @@ dist
 .tern-port
 # project ignore files
 package-lock.json
+yarn.lock
