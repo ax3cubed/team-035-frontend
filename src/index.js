@@ -1,34 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PropTypes from 'prop-types';
-import Header from './components/Header';
-import app from './app';
-/*
-const startApp = async () => {
-  const header = document.querySelector('[data-app-name]');
-  if (!header) return;
 
-  const programName = await app();
-  header.textContent = programName;
-};
+import * as serviceWorker from './serviceWorker';
+import App from './App';
 
-document.addEventListener('DOMContentLoaded', startApp);
-*/
-class HelloMessage extends React.Component {
-  render() {
-    return <div>
-          <Header/>
-          <div className="container">
-              <h1>Hello {this.props.name}</h1>
-          </div>
-      </div>;
-  }
-}
-HelloMessage.propTypes = {
-  name: PropTypes.string.isRequired
-};
+ReactDOM.render(<App />, document.getElementById('root'));
 
-const App = document.querySelector('[data-app-name]');
-const programName = app();
-
-ReactDOM.render(<HelloMessage name={programName} />, App);
+serviceWorker.unregister();
