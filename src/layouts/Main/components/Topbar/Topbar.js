@@ -6,7 +6,6 @@ import { makeStyles } from '@material-ui/styles';
 import { AppBar, Toolbar, Badge, Hidden, IconButton } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import NotificationsIcon from '@material-ui/icons/NotificationsOutlined';
-import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
 import InputIcon from '@material-ui/icons/Input';
 
 const useStyles = makeStyles(theme => ({
@@ -37,9 +36,9 @@ const Topbar = props => {
       <Toolbar>
         <RouterLink to="/">
           <IconButton
-            color="inherit"
+            color="#ffffff"
           >SMEIH 
-            < AccessAlarmIcon/>
+           
           </IconButton>
             
         </RouterLink>
