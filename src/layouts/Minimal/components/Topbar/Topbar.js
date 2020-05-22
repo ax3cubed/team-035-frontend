@@ -8,6 +8,9 @@ import { AppBar, Toolbar } from '@material-ui/core';
 const useStyles = makeStyles(() => ({
   root: {
     boxShadow: 'none'
+  },
+  minLogo:{
+    color:"#ffffff"
   }
 }));
 
@@ -24,8 +27,8 @@ const Topbar = props => {
       position="fixed"
     >
       <Toolbar>
-        <RouterLink to="/">
-                <p color="#ffffff">SMEIH </p>
+        <RouterLink chassName={classes.minLogo} to="/">
+                 SMEIH 
         </RouterLink>
       </Toolbar>
     </AppBar>
