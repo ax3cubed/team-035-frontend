@@ -194,17 +194,14 @@ const SignIn = props => {
           xs={12}
         >
           <div className={classes.content}>
-            <div className={classes.contentHeader}>
-              <IconButton onClick={handleBack}>
-                <ArrowBackIcon />
-              </IconButton>
-            </div>
+            
             <div className={classes.contentBody}>
               <form
                 className={classes.form}
                 onSubmit={handleSignIn}
               >
                 <Typography
+                  align="center"
                   className={classes.title}
                   variant="h2"
                 >
@@ -212,14 +209,6 @@ const SignIn = props => {
                 </Typography>
                 
                 
-                <Typography
-                  align="center"
-                  className={classes.sugestion}
-                  color="textSecondary"
-                  variant="body1"
-                >
-                  Login with email address
-                </Typography>
                 <TextField
                   className={classes.textField}
                   error={hasError('email')}
@@ -259,11 +248,6 @@ const SignIn = props => {
                 >
                   Sign in now
                 </Button>
-<Grid
-                  className={classes.socialButtons}
-                  container
-                  spacing={2}
-                >
               <Typography
                   align="center"
                   color="textSecondary"
@@ -271,6 +255,12 @@ const SignIn = props => {
                 >
                   Or Sign in with social media
                 </Typography>
+<Grid
+                  className={classes.socialButtons}
+                  container
+                  spacing={2}
+                >
+
      
                   <Grid item>
                     <Button
