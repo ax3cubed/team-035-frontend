@@ -27,12 +27,12 @@ const Footer = props => {
           href="#"
           target="_blank"
         >
-          Website name 
+          SMEIH 
         </Link>
-        . 2019
+        . 2020
       </Typography>
       <Typography variant="caption">
-        Adeola test
+       #BuildForSDG 2020
       </Typography>
     </div>
   );
