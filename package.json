@@ -31,14 +31,8 @@
     "name": "Build For SDG",
     "email": "buildforsdg@andela.com"
   },
-  "homepage": "https://github.com/BuildForSDG/js-starter#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/BuildForSDG/js-starter.git"
-  },
-  "bugs": {
-    "url": "https://github.com/BuildForSDG/js-starter/issues"
-  },
+ 
+  
   "license": "MIT",
     "dependencies": {
     "@material-ui/core": "^4.2.1",
