@@ -287,6 +287,7 @@ const SignIn = props => {
                 <Typography
                   color="textSecondary"
                   variant="body1"
+                  spacing={2}
                 >
                   Don't have an account?{' '}
                   <Link
