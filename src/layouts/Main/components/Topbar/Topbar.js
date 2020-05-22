@@ -38,8 +38,7 @@ const Topbar = props => {
         <RouterLink to="/">
           <IconButton
             color="inherit"
-           
-          >
+          >SMEIH 
             < AccessAlarmIcon/>
           </IconButton>
             
