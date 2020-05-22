@@ -263,7 +263,7 @@ const SignIn = props => {
                   spacing={2}
                 >
               <Typography
-                  align="center
+                  align="center"
                   color="textSecondary"
                   gutterBottom
                 >
