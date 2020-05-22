@@ -15,6 +15,9 @@ const useStyles = makeStyles(theme => ({
   flexGrow: {
     flexGrow: 1
   },
+  iconHome: {
+     color:"#ffffff"
+},
   signOutButton: {
     marginLeft: theme.spacing(1)
   },
@@ -36,7 +39,7 @@ const Topbar = props => {
       <Toolbar>
         <RouterLink to="/">
           <IconButton
-            color="#ffffff"
+            className={classes.iconHome}
           >SMEIH 
            
           </IconButton>
