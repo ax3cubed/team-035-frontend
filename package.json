@@ -13,12 +13,14 @@
     "test": "__tests__"
   },
   "scripts": {
-    "test": "jest",
     "test:watch": "jest --watch",
     "test:cover": "jest --coverage",
     "lint": "eslint \"src/**/*.js\"",
     "fix": "eslint --fix \"src/**/*.js\"",
-    "start": "parcel ./src/index.html --open"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts jest",
+    "eject": "react-scripts eject"
   },
   "author": {
     "name": "Build For SDG",
