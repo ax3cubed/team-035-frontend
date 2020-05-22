@@ -1,9 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { createMuiTheme } from '@material-ui/core';
 
-import * as serviceWorker from './serviceWorker';
-import App from './App';
+import palette from './palette';
+import typography from './typography';
+import overrides from './overrides';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const theme = createMuiTheme({
+  palette,
+  typography,
+  overrides,
+  zIndex: {
+    appBar: 1200,
+    drawer: 1100
+  }
+});
 
-serviceWorker.unregister();
+export default theme;
