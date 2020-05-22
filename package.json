@@ -7,20 +7,25 @@
     "boilerplate"
   ],
   "private": false,
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "directories": {
-    "test": "__tests__"
-  },
-  "scripts": {
-    "test:watch": "jest --watch",
-    "test:cover": "jest --coverage",
-    "lint": "eslint \"src/**/*.js\"",
-    "fix": "eslint --fix \"src/**/*.js\"",
+ 
+    "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts jest",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "author": {
     "name": "Build For SDG",
@@ -35,20 +40,19 @@
     "url": "https://github.com/BuildForSDG/js-starter/issues"
   },
   "license": "MIT",
-  "dependencies": {
+    "dependencies": {
     "@material-ui/core": "^4.2.1",
     "@material-ui/icons": "^4.2.1",
     "@material-ui/styles": "^4.2.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
     "chart.js": "^2.8.0",
     "clsx": "^1.0.4",
     "history": "^4.9.0",
     "moment": "^2.24.0",
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
+    "react": "^16.8.6",
     "react-chartjs-2": "^2.7.6",
+    "react-dom": "^16.8.6",
     "react-perfect-scrollbar": "^1.5.3",
     "react-router-dom": "^5.0.1",
     "react-scripts": "^3.0.1",
@@ -58,16 +62,6 @@
     "validate.js": "^0.13.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.5",
-    "@babel/preset-react": "^7.9.4",
-    "babel-jest": "^25.4.0",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-react": "^7.19.0",
-    "jest": "^25.4.0",
-    "parcel-bundler": "^1.12.4",
     "typescript": "^3.5.1"
   },
   "browserslist": [
