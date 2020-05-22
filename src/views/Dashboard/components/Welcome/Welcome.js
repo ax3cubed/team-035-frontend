@@ -3,11 +3,13 @@ import React from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
-import { Card, CardContent, Grid, Typography, Avatar } from '@material-ui/core';
+import {
+  Card, CardContent, Grid, Typography, Avatar
+} from '@material-ui/core';
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import PeopleIcon from '@material-ui/icons/PeopleOutlined';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     height: '100%'
   },
@@ -41,7 +43,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const Welcome = props => {
+const Welcome = (props) => {
   const { className, ...rest } = props;
 
   const classes = useStyles();

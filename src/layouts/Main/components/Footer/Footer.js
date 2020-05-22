@@ -4,13 +4,13 @@ import clsx from 'clsx';
 import { makeStyles } from '@material-ui/styles';
 import { Typography, Link } from '@material-ui/core';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     padding: theme.spacing(4)
   }
 }));
 
-const Footer = props => {
+const Footer = (props) => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
@@ -27,7 +27,7 @@ const Footer = props => {
           href="#"
           target="_blank"
         >
-          SMEIH 
+          SMEIH
         </Link>
         . 2020
       </Typography>

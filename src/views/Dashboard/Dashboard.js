@@ -3,11 +3,11 @@ import { makeStyles } from '@material-ui/styles';
 import { Grid } from '@material-ui/core';
 
 import {
-  Welcome,
-  
+  Welcome
+
 } from './components';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     padding: theme.spacing(4)
   }
@@ -22,7 +22,7 @@ const Dashboard = () => {
         container
         spacing={4}
       >
-        
+
         <Grid
           item
           lg={3}
@@ -32,10 +32,8 @@ const Dashboard = () => {
         >
           <Welcome />
         </Grid>
-        
-        
-        
-        
+
+
       </Grid>
     </div>
   );

@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/styles';
 import { Paper, Input } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     borderRadius: '4px',
     alignItems: 'center',
@@ -25,8 +25,10 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const SearchInput = props => {
-  const { className, onChange, style, ...rest } = props;
+const SearchInput = (props) => {
+  const {
+    className, onChange, style, ...rest
+  } = props;
 
   const classes = useStyles();
 

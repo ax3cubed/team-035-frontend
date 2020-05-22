@@ -9,12 +9,12 @@ const useStyles = makeStyles(() => ({
   root: {
     boxShadow: 'none'
   },
-  minLogo:{
-    color:"#ffffff"
+  minLogo: {
+    color: '#ffffff'
   }
 }));
 
-const Topbar = props => {
+const Topbar = (props) => {
   const { className, ...rest } = props;
 
   const classes = useStyles();

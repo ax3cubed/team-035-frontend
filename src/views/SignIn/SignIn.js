@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-shadow */
 import React, { useState, useEffect } from 'react';
 import { Link as RouterLink, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -6,12 +8,10 @@ import { makeStyles } from '@material-ui/styles';
 import {
   Grid,
   Button,
-  IconButton,
   TextField,
   Link,
   Typography
 } from '@material-ui/core';
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 import { Facebook as FacebookIcon, Google as GoogleIcon } from '../../icons';
 
@@ -31,7 +31,7 @@ const schema = {
   }
 };
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.default,
     height: '100%'
@@ -110,8 +110,8 @@ const useStyles = makeStyles(theme => ({
   },
   socialButtons: {
     marginTop: theme.spacing(3),
-    maxWidth:290,
-    margin: "0 auto"
+    maxWidth: 290,
+    margin: '0 auto'
   },
   socialIcon: {
     marginRight: theme.spacing(1)
@@ -127,7 +127,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const SignIn = props => {
+const SignIn = (props) => {
   const { history } = props;
 
   const classes = useStyles();
@@ -142,9 +142,9 @@ const SignIn = props => {
   useEffect(() => {
     const errors = validate(formState.values, schema);
 
-    setFormState(formState => ({
+    setFormState((formState) => ({
       ...formState,
-      isValid: errors ? false : true,
+      isValid: !errors,
       errors: errors || {}
     }));
   }, [formState.values]);
@@ -153,10 +153,9 @@ const SignIn = props => {
     history.goBack();
   };
 
-  const handleChange = event => {
+  const handleChange = (event) => {
     event.persist();
-
-    setFormState(formState => ({
+    setFormState((formState) => ({
       ...formState,
       values: {
         ...formState.values,
@@ -172,13 +171,12 @@ const SignIn = props => {
     }));
   };
 
-  const handleSignIn = event => {
+  const handleSignIn = (event) => {
     event.preventDefault();
     history.push('/');
   };
 
-  const hasError = field =>
-    formState.touched[field] && formState.errors[field] ? true : false;
+  const hasError = (field) => (!!(formState.touched[field] && formState.errors[field]));
 
   return (
     <div className={classes.root}>
@@ -186,7 +184,7 @@ const SignIn = props => {
         className={classes.grid}
         container
       >
-        
+
         <Grid
           className={classes.content}
           item
@@ -194,7 +192,7 @@ const SignIn = props => {
           xs={12}
         >
           <div className={classes.content}>
-            
+
             <div className={classes.contentBody}>
               <form
                 className={classes.form}
@@ -207,8 +205,8 @@ const SignIn = props => {
                 >
                   Sign in
                 </Typography>
-                
-                
+
+
                 <TextField
                   className={classes.textField}
                   error={hasError('email')}
@@ -261,7 +259,7 @@ const SignIn = props => {
                   spacing={2}
                 >
 
-     
+
                   <Grid item>
                     <Button
                       color="primary"
@@ -273,7 +271,7 @@ const SignIn = props => {
                       Login with Facebook
                     </Button>
                   </Grid>
-                  <Grid item xs={12}  >
+                  <Grid item xs={12} >
                     <Button
                       onClick={handleSignIn}
                       size="large"
@@ -289,7 +287,7 @@ const SignIn = props => {
                   variant="body1"
                   spacing={2}
                 >
-                  Don't have an account?{' '}
+                  Don&apos;t have an account?{' '}
                   <Link
                     component={RouterLink}
                     to="/sign-up"

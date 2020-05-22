@@ -11,8 +11,7 @@ import {
   NotFound as NotFoundView
 } from './views';
 
-const Routes = () => {
-  return (
+const Routes = () => (
     <Switch>
       <Redirect
         exact
@@ -25,7 +24,7 @@ const Routes = () => {
         layout={MainLayout}
         path="/dashboard"
       />
-      
+
       <RouteWithLayout
         component={SignUpView}
         exact
@@ -46,7 +45,6 @@ const Routes = () => {
       />
       <Redirect to="/not-found" />
     </Switch>
-  );
-};
+);
 
 export default Routes;

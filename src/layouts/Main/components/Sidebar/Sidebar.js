@@ -8,7 +8,7 @@ import LockOpenIcon from '@material-ui/icons/LockOpen';
 
 import { Profile, SidebarNav } from './components';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   drawer: {
     width: 240,
     [theme.breakpoints.up('lg')]: {
@@ -31,8 +31,10 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const Sidebar = props => {
-  const { open, variant, onClose, className, ...rest } = props;
+const Sidebar = (props) => {
+  const {
+    open, variant, onClose, className, ...rest
+  } = props;
 
   const classes = useStyles();
 
@@ -42,14 +44,14 @@ const Sidebar = props => {
       href: '/dashboard',
       icon: <DashboardIcon />
     },
-    
+
     {
       title: 'Authentication',
       href: '/sign-in',
       icon: <LockOpenIcon />
-    },
-    
-    
+    }
+
+
   ];
 
   return (
@@ -70,7 +72,7 @@ const Sidebar = props => {
           className={classes.nav}
           pages={pages}
         />
-        
+
       </div>
     </Drawer>
   );

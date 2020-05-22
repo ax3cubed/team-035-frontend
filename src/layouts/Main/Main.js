@@ -6,7 +6,7 @@ import { useMediaQuery } from '@material-ui/core';
 
 import { Sidebar, Topbar, Footer } from './components';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     paddingTop: 56,
     height: '100%',
@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const Main = props => {
+const Main = (props) => {
   const { children } = props;
 
   const classes = useStyles();

@@ -7,14 +7,14 @@
     "boilerplate"
   ],
   "private": false,
-
-    "scripts": {
+  "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint \"src/**/*.js\"",
+    "fix": "eslint --fix \"src/**/*.js\""
   },
-
   "browserslist": {
     "production": [
       ">0.2%",
@@ -31,10 +31,8 @@
     "name": "Build For SDG",
     "email": "buildforsdg@andela.com"
   },
-
-
   "license": "MIT",
-    "dependencies": {
+  "dependencies": {
     "@material-ui/core": "^4.2.1",
     "@material-ui/icons": "^4.2.1",
     "@material-ui/styles": "^4.2.1",
@@ -56,6 +54,10 @@
     "validate.js": "^0.13.1"
   },
   "devDependencies": {
-    "typescript": "^3.5.1"
+    "typescript": "^3.5.1",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint": "^7.0.0"
   }
 }

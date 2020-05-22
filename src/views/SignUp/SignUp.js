@@ -47,7 +47,7 @@ const schema = {
   }
 };
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.default,
     height: '100%'
@@ -140,7 +140,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const SignUp = props => {
+const SignUp = (props) => {
   const { history } = props;
 
   const classes = useStyles();
@@ -155,17 +155,17 @@ const SignUp = props => {
   useEffect(() => {
     const errors = validate(formState.values, schema);
 
-    setFormState(formState => ({
+    setFormState((formState) => ({
       ...formState,
-      isValid: errors ? false : true,
+      isValid: !errors,
       errors: errors || {}
     }));
   }, [formState.values]);
 
-  const handleChange = event => {
+  const handleChange = (event) => {
     event.persist();
 
-    setFormState(formState => ({
+    setFormState((formState) => ({
       ...formState,
       values: {
         ...formState.values,
@@ -185,13 +185,12 @@ const SignUp = props => {
     history.goBack();
   };
 
-  const handleSignUp = event => {
+  const handleSignUp = (event) => {
     event.preventDefault();
     history.push('/');
   };
 
-  const hasError = field =>
-    formState.touched[field] && formState.errors[field] ? true : false;
+  const hasError = (field) => (!!(formState.touched[field] && formState.errors[field]));
 
   return (
     <div className={classes.root}>
@@ -204,31 +203,6 @@ const SignUp = props => {
           item
           lg={5}
         >
-          <div className={classes.quote}>
-            <div className={classes.quoteInner}>
-              <Typography
-                className={classes.quoteText}
-                variant="h1"
-              >
-                Hella narwhal Cosby sweater McSweeney's, salvia kitsch before
-                they sold out High Life.
-              </Typography>
-              <div className={classes.person}>
-                <Typography
-                  className={classes.name}
-                  variant="body1"
-                >
-                  Takamaru Ayako
-                </Typography>
-                <Typography
-                  className={classes.bio}
-                  variant="body2"
-                >
-                  Manager at inVision
-                </Typography>
-              </div>
-            </div>
-          </div>
         </Grid>
         <Grid
           className={classes.content}
