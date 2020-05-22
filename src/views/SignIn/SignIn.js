@@ -262,7 +262,7 @@ const SignIn = props => {
                   container
                   spacing={2}
                 >
-              B<Typography
+              <Typography
                   align="center
                   color="textSecondary"
                   gutterBottom
