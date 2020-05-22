@@ -109,7 +109,9 @@ const useStyles = makeStyles(theme => ({
     marginTop: theme.spacing(3)
   },
   socialButtons: {
-    marginTop: theme.spacing(3)
+    marginTop: theme.spacing(3),
+    maxWidth:290,
+    margin: "0 auto"
   },
   socialIcon: {
     marginRight: theme.spacing(1)
@@ -269,7 +271,8 @@ const SignIn = props => {
                 >
                   Or Sign in with social media
                 </Typography>
-                  <Grid item   xs={12} >
+     
+                  <Grid item>
                     <Button
                       color="primary"
                       onClick={handleSignIn}
