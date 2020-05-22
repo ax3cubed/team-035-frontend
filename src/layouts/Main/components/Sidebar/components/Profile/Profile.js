@@ -28,7 +28,7 @@ const Profile = props => {
 
   const user = {
     name: 'John Doe',
-    avatar: '/images/avatars/avatar_1.png',
+    avatar: '/images/avas/avatar_1.png',
     bio: 'Person'
   };
 

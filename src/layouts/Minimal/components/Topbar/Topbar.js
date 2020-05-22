@@ -27,8 +27,8 @@ const Topbar = props => {
       position="fixed"
     >
       <Toolbar>
-        <RouterLink chassName={classes.minLogo} to="/">
-                 SMEIH 
+        <RouterLink className={classes.minLogo} to="/">
+                 SMEIH
         </RouterLink>
       </Toolbar>
     </AppBar>
