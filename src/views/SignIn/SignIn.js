@@ -269,7 +269,7 @@ const SignIn = props => {
                 >
                   Or Sign in with social media
                 </Typography>
-                  <Grid item>
+                  <Grid item   xs={12} >
                     <Button
                       color="primary"
                       onClick={handleSignIn}
@@ -280,7 +280,7 @@ const SignIn = props => {
                       Login with Facebook
                     </Button>
                   </Grid>
-                  <Grid item>
+                  <Grid item xs={12}  >
                     <Button
                       onClick={handleSignIn}
                       size="large"
