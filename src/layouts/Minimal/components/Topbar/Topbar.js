@@ -25,6 +25,7 @@ const Topbar = props => {
     >
       <Toolbar>
         <RouterLink to="/">
+SMEIH 
             <AccessAlarmIcon/>
         </RouterLink>
       </Toolbar>
