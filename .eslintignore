@@ -3,6 +3,7 @@ build
 docs
 docker
 test
+jsconfig.json
 .vscode
 koa/views
 src/generated
