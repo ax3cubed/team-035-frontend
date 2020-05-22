@@ -1,1 +1,1 @@
-import { default} from './SignUp';
+export { default} from './SignUp';
