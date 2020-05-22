@@ -1,1 +1,1 @@
-import { default} from './SignUp.js';
+import { default} from './SignUp';
