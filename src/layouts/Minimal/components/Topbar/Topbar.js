@@ -25,7 +25,7 @@ const Topbar = props => {
     >
       <Toolbar>
         <RouterLink to="/">
-                SMEIH 
+                <p color="#ffffff">SMEIH </p>
         </RouterLink>
       </Toolbar>
     </AppBar>
