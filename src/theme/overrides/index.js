@@ -1,4 +1,4 @@
-  import MuiButton from './MuiButton';
+import MuiButton from './MuiButton';
 import MuiIconButton from './MuiIconButton';
 import MuiPaper from './MuiPaper';
 import MuiTableCell from './MuiTableCell';
