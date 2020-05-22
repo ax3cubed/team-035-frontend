@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
 import { AppBar, Toolbar } from '@material-ui/core';
-import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
+
 const useStyles = makeStyles(() => ({
   root: {
     boxShadow: 'none'
@@ -25,8 +25,7 @@ const Topbar = props => {
     >
       <Toolbar>
         <RouterLink to="/">
-SMEIH 
-            <AccessAlarmIcon/>
+                SMEIH 
         </RouterLink>
       </Toolbar>
     </AppBar>
