@@ -262,11 +262,12 @@ const SignIn = props => {
                   container
                   spacing={2}
                 >
-<Typography
+              B<Typography
+                  align="center
                   color="textSecondary"
                   gutterBottom
                 >
-                  Sign in with social media
+                  Or Sign in with social media
                 </Typography>
                   <Grid item>
                     <Button
